@@ -1,0 +1,95 @@
+.recipe-title
+  @extend .heading
+  font-size: 2em
+  color: $secondary
+  margin-bottom: 0.5em
+.recipe
+  margin-bottom: 4em
+  h4 
+    +heading 
+    color: $primary
+    margin-bottom: 0.5em 
+  li 
+    &:before 
+      font-family: "FontAwesome"
+      content: "\f00c"
+      color: $secondary
+      margin-right: 0.5em  
+.recipe-img 
+  margin-bottom: 1em
+  img 
+    width: 100%  
+.ingredients
+  margin-bottom: 2em
+  // li
+  //   .fa 
+  //     color: $secondary
+  //     margin-right: 0.5em    
+.recipe-print
+  @extend .button-yellow
+  margin-bottom: 0.5em
+  @media (max-width: 767px)
+    display: block 
+  &:before 
+    font-family: "FontAwesome"
+    content: "\f02f"
+    margin-right: 0.5em
+  // &:hover 
+  //   text-decoration: none
+  //   background-color: $orange    
+.recipe-nutritional
+  @extend .button-yellow
+  margin-bottom: 0.5em
+  @media (max-width: 767px)
+    display: block     
+  &:before 
+    font-family: "FontAwesome"
+    content: "\f0f6"
+    margin-right: 0.5em
+  
+.job-post
+  ul 
+    margin-bottom: 0.5em  
+  li 
+    &:before 
+      font-family: "FontAwesome"
+      content: "\f00c"
+      color: $secondary
+      margin-right: 0.5em
+  h3
+    font-weight: 600
+    font-size: 0.9em
+    margin-bottom: 0.5em
+    font-family: "Raleway", "Open Sans", sans-serif
+  h2 
+    font-size: 1.4em    
+    margin-bottom: 1em  
+#nutritionFacts
+  display: none
+  background-color: #fff
+  width: 100%
+  max-width: 600px
+  padding: 1em
+  border-radius: 0.5em    
+  table 
+    width: 100%
+  .title 
+    margin-bottom: 0.5em
+    font-weight: 600
+    font-family: "Raleway"
+    border-bottom: 2px solid #aaa
+    line-height: 1.4
+    font-size: 1.4em 
+  .nutrition-header
+    padding: 0.5em
+    background-color: #F1F1F1   
+  .nutrition-comment 
+    font-size: 0.8em
+    margin-top: 1em
+    padding-top: 0.5em
+    border-top: 1px solid #AAA
+  .nutrition-content 
+    padding: 0.5em
+    background-color: #D7ECFF  
+  .ident 
+    padding-left: 0.5em    

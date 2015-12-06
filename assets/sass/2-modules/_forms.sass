@@ -1,0 +1,57 @@
+input, textarea, select, button 
+  outline: none
+  &:focus 
+    outline: none
+  &[disabled]
+    opacity: 0.3
+    cursor: not-allowed 
+input[type=file], input[type=checkbox], input[type=radio]
+  outline: none
+  &:focus
+    outline: none
+textarea
+  width: 100%
+  max-width: 250px
+  border: 1px solid #aaa
+  padding: 0.5em
+  line-height: 1.4
+  &:focus 
+    border-color: #333
+  &.input-valid
+    border-color: yellowgreen 
+    background-color: rgba(yellowgreen, 0.1)
+  &.input-invalid
+    border-color: red
+    background-color: rgba(red, 0.1)  
+input:not([type="radio"]):not([type="checkbox"]), select
+  @extend textarea
+  padding: 0 0.5em
+  line-height: 2.5em
+  height: 2.5em
+  vertical-align: middle  
+  &.input-valid
+    border-color: yellowgreen 
+    background-color: rgba(yellowgreen, 0.1)
+  &.input-invalid
+    border-color: red
+    background-color: rgba(red, 0.1)
+input[type="radio"], input[type="checkbox"]
+  margin: 0 0.3em 0 0
+  vertical-align: middle
+label
+  margin: 0 
+  vertical-align: middle
+  font-weight: 600
+.form-group
+  line-height: 2.5em  
+  margin-bottom: 0.5em  
+.modifier-disabled-input
+  display: inline-block
+  width: 100%
+  width: 250px
+  height: 100%
+.disabled 
+  opacity: 0.2
+  cursor: not-allowed  
+    
+

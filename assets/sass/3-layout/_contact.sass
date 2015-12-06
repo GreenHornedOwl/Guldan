@@ -1,0 +1,48 @@
+.contact-form
+  +make-row 
+  margin-bottom: 1em
+  .form-group
+    +make-xs-column(12)
+    +make-sm-column(6)    
+    input 
+      border-radius: 0px
+  .form-group:nth-child(1)  
+    +make-xs-column(12)
+    +make-sm-column(6)
+    margin-right: 50%
+  .form-group:nth-child(12) 
+    +make-xs-column(12)
+  .form-actions
+    +make-xs-column(12)
+    text-align: left
+    button 
+     @extend .button-yellow
+.contact-us-form
+  +make-row 
+  .form-group
+    +make-xs-column(12)
+    +make-sm-column(6)
+    input 
+      border-radius: 0px
+  .form-group:nth-child(1)  
+    +make-xs-column(12)
+    +make-sm-column(6)
+    margin-right: 50%
+  .form-group:nth-child(6), .form-group:nth-child(7), .form-group:nth-child(8)  
+    +make-xs-column(12)
+  .form-actions
+    +make-xs-column(12)
+    text-align: left
+    button 
+      @extend .button-yellow
+.contact-us-popup
+  +make-row 
+  .form-group
+    +make-xs-column(12)
+    input, textarea, select 
+      border-radius: 0px 
+  .form-actions
+    +make-xs-column(12)
+    text-align: left
+    button 
+      @extend .button-yellow          

@@ -1,0 +1,194 @@
+.homepage-about-us
+  padding: 2em
+  animation-delay: 0.7s 
+  h2 
+    font-size: 3.2em
+    margin-bottom: 0.2em
+  p 
+    font-size: 1.6em
+    font-weight: 300
+.homepage-services
+  padding: 2em
+  animation-delay: 0.7s
+  text-align: right
+  p 
+    color: #CCCCCC
+    font-size: 1.6em
+    font-weight: 300
+    line-height: 1
+    display: inline-block  
+  a 
+    font-size: 1.6em
+    font-weight: 400 
+    color: #000
+    border-bottom: 1px solid #eee
+    &:hover 
+      color: $primary
+.project-list--homepage  
+  +clearfix
+  margin: 0 -$spacing/2
+  padding: 0 2em
+  .project-image 
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+  .col-sm-3
+    .project-image 
+      height: 19em
+  .col-sm-6
+    .project-image 
+      height: 41.5em  
+  .project-item
+    animation-duration: 1.2s   
+    overflow: hidden
+    padding: 0 $spacing/2
+    margin-bottom: $spacing
+    a 
+      display: block
+      color: #333
+      position: relative
+      &:hover         
+        .project-action 
+          transform: rotate3d(1,0,0,180deg) translateX(0.2em)
+        .project-image 
+          filter: brightness(0.8)
+        .project-read-more
+          opacity: 1
+          transform: translateX(0.2em)  
+    img 
+      width: 100%
+    .project-title
+      font-size: 1.6em
+      font-weight: 300
+      color: $primary 
+      margin-bottom: 0
+    span 
+      margin-bottom: 0.2em 
+      display: block 
+    .project-action  
+      position: absolute
+      right: 0.5em
+      bottom: 1em
+      background-color: rgba(0, 0, 0, 0.44)
+      color: white
+      font-size: 1.6em
+      padding: 0 0.4em
+      margin: 0
+      line-height: 1
+      background-color: transparent   
+    .project-read-more
+      opacity: 0
+      position: absolute
+      bottom: 1.75em
+      right: 2.8em
+      margin: 0
+      line-height: 2em
+      color: white     
+      padding: 0 0.5em
+      font-size: 0.9em
+    &.col-sm-3
+      height: 22rem
+    &.col-sm-6 
+      height: 44.5rem   
+    &:nth-child(1)
+      animation-delay: 1.2s
+    &:nth-child(2)      
+      animation-delay: 1.4s
+    &:nth-child(3)  
+      animation-delay: 1.6s
+    &:nth-child(4)    
+      animation-delay: 1.8s
+    &:nth-child(5)    
+      animation-delay: 2s
+    &:nth-child(6)    
+      animation-delay: 2.2s   
+    &:nth-child(7)    
+      animation-delay: 2.2s
+    &:nth-child(8)    
+      animation-delay: 2.2s
+    &:nth-child(9)    
+      animation-delay: 2.2s  
+    &:nth-child(10)    
+      animation-delay: 2.2s   
+    &:nth-child(11)    
+      animation-delay: 2.2s
+    &:nth-child(12)    
+      animation-delay: 2.2s
+    &:nth-child(13)    
+      animation-delay: 2.2s            
+.homepage-blog
+  padding: 2em $spacing 0 2em  
+  .homepage-blog-featured
+    .blog-item
+      padding-right: 1.5em
+    p 
+      font-size: 1.6em
+      font-weight: 300
+      display: inline
+    h3 
+      font-weight: 400     
+      line-height: 1
+      padding-bottom: 0.2em
+      font-size: 2.4em  
+    a 
+      color: #000
+      &:hover 
+        color: $primary  
+    .blog-action
+      display: inline-block
+      span 
+        font-size: 1.6em
+        display: block
+        line-height: 1
+        color: $primary
+      &:hover
+        .ion-ios-arrow-thin-right
+          transform: rotate3d(1,0,0,180deg) translateX(0.2em)   
+.homepage-blog-list
+  padding-top : 2em
+  padding-right: 2.25em
+  padding-left: 0
+  margin-left: -1em
+  p 
+    font-weight: 400     
+    line-height: 1
+    padding-bottom: 0.2em
+    font-size: 2.4em  
+    margin-bottom: 0
+  span 
+    color: $primary
+    font-size: 1.6em
+    vertical-align: middle    
+    display: inline-block
+    line-height: 1
+    margin-left: 0.25em
+    margin-left: 0.25em
+  li:last-child
+    a 
+      border-bottom: none  
+  a 
+    color: #333
+    font-size: 1em
+    border-bottom: 1px solid #eee
+    display: block
+    padding: 0.5em 0   
+    &:hover 
+      color: $primary
+      .ion-ios-arrow-thin-right
+        transform: rotate3d(1,0,0,180deg) translateX(0.2em)
+.contact-us-paragraph
+  p 
+    text-align: center 
+    font-size: 3.2em
+    font-weight: 300
+  input 
+    display: block
+    border-bottom: 1px solid #000
+    width: 30em
+    margin: 0 auto
+    text-align: center
+    font-size: 1.6em
+    font-weight: 300   
+    &:focus   
+      background-color: #fafafa   
+      

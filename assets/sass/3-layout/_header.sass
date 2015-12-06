@@ -1,0 +1,58 @@
+.header 
+  +clearfix
+  position: fixed 
+  left: 0
+  right: 0
+  top: 0
+  padding: $spacing
+  width: 100%
+  background-color: #fff
+  background-color: rgba(#fff, 0.95)
+  padding: 1.6em
+  z-index: 1000
+  &.modified 
+    padding: 0.5em 1.6em
+    // .header-logo
+    //   .logo-full 
+    //     opacity: 0
+    //   .logo-min 
+    //     opacity: 1  
+  .header-logo 
+    +make-sm-column(4)
+    +make-md-column(6)
+    padding-top: 0.2em
+    position: relative
+    .logo-min
+      display: none
+      // position: absolute
+      // top: 3px
+      // opacity: 0      
+    // .logo-full  
+    //   opacity: 1  
+    img 
+     max-width: 300px  
+      
+     // height: 3em 
+  .header-nav
+    +make-sm-column(8) 
+    +make-md-column(6)
+    font-size: 0.9em
+    font-weight: 300
+    padding-top: 0.5em
+    text-align: right
+  .header-search
+    display: inline-block
+    vertical-align: top
+    input 
+      width: 10em
+      line-height: 1em
+      background-color: transparent
+      +placeholder
+        color: #333
+    button 
+      background-color: transparent
+      color: $primary
+      font-size: 1.6em          
+
+
+

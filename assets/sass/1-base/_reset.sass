@@ -1,0 +1,38 @@
+html 
+	font-size: 1em
+* 
+	box-sizing: border-box 
+	transition: all 0.3s ease-out	
+body 
+	background-color: #FFF
+	font-family: "Open Sans", Verdana, sans-serif		
+	font-size: 16px
+	font-weight: 400
+	color: #333
+	line-height: 1.4
+p
+	margin: 0 0 0.5em
+a
+	display: inline-block
+	text-decoration: none	
+	color: $primary
+	&:hover 
+		color: darken(adjust_hue($primary, 136), 11)
+		text-decoration: none
+h1, h2, h3, h4, h5, h6 
+	font-weight: 300
+	margin: 0
+img
+	+img-responsive()
+ul
+	padding: 0px
+	margin: 0px
+	list-style-type: none
+input, button, textarea, select
+	outline: none
+	box-shadow: none
+	border: none
+a, input, select, textarea 
+	transition: all 0.3s ease-out	
+textarea 
+	max-width: 100%	
